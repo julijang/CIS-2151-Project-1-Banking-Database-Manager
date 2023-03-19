@@ -53,11 +53,13 @@ public abstract class Account {
 
     public Double deposit(double amount) {
         balance += amount;
+        logTransaction("You have deposited: " + currency.format(amount));
         return amount;
     }
 
     public Double withdraw(double amount) {
         balance -= amount;
+        logTransaction("You have withdrawn: " + currency.format(amount));
         return amount;
     }
 
