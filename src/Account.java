@@ -61,6 +61,5 @@ public abstract class Account {
         return amount;
     }
 
-   public abstract String logTransaction(String transaction);
-
+    public abstract String logTransaction(String transaction);
 }
